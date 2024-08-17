@@ -2,7 +2,6 @@ export default function ehUmRG(campo) {
     
     
     const RG = campo.value.replace(/\D/g, ""); 
-    console.log(RG);
 
 
     if (!validaFormatoRG(RG) || numerosRepetidos(RG)) {

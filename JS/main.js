@@ -20,7 +20,18 @@ form.addEventListener('submit', (e) => {
     }
 
 
-    window.location.href = 'about.html'; 
+    let todosValidos = true;
+    campoForm.forEach(campo => {
+        if (!verificarCampo(campo)) {
+            todosValidos = false;
+        }
+    });
+
+    if (todosValidos) {
+        window.location.href = 'about.html';
+    }
+
+   
 
 })
 
