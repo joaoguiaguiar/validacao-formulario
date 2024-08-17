@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+
+        <h1>login</h1>
+
+        <form action="" method="post" id="form" data-formulario>
+
+            <fieldset class="mb-3 container__input">
+                <label for="nome" class="form-label">Nome :</label>
+                <input type="text" name="nome" class="form-control input" id="nome" placeholder="Nome completo" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="mb-3 container__input">
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" name="email" class="form-control input" id="email" required minlength="4">
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <fieldset class="mb-3 container__input container__dados">
+
+                <div class="container__RG">
+                    <label for="RG" class="form-label">RG :</label>
+                    <input type="text" class="form-control input" name="RG" id="RG" required minlength="7" maxlength="12">
+                    <span class="mensagem-erro"></span>
+                </div>
+                <div class="container__CPF">
+                    <label for="CPF" class="form-label">CPF :</label>
+                    <input type="text" class="form-control input" id="CPF" name="CPF" required minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}">
+                    <span class="mensagem-erro"></span>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="mb-3 container__input">
+                <label for="data" class="form-label">Data de nascimento:</label>
+                <input type="date" name="dataNascimento" class="form-control input" id="dataNascimento" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div class="container__botao">
+                <button class="btn" id="botao">Enviar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="./JS/main.js"></script>
+</body>
+
+</html>
