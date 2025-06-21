@@ -1,4 +1,4 @@
-Sobre
+# Sobre
 
 Este projeto foi criado para aprimorar meu conhecimento em HTML, CSS e JavaScript, com foco em validação de formulários. O script implementado realiza validações importantes, como:
 	
